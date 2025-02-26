@@ -1,15 +1,13 @@
 clc
 clear 
-% Define the time vector
-t = -1:0.01:1;
+close all
+%y = gauspulse(t)
+%plot(t,y)
+%help dirac
 
-% Create the unit impulse function
-delta = t == 0;
-
-% Plot the unit impulse function
-figure;
-stem(t, delta, 'LineWidth', 2);
-title('Unit Impulse Function');
-xlabel('Time (t)');
-ylabel('\delta(t)');
-grid on;
+t=-3:0.1:3
+y= inf==dirac(t)
+plot(t,y)
+xlabel('Time')
+ylabel('Amplitude')
+title('Unit impulse using dirac(t)')

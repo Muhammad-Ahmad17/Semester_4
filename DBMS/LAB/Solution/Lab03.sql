@@ -99,3 +99,22 @@ SELECT * FROM Table3
 WHERE ProductName NOT BETWEEN 'C' AND 'M';
 
 
+-- MO0O00REEEEEEEE
+
+SELECT * FROM Table3 
+WHERE Price > 15
+ORDER BY Price DESC;
+
+SELECT DISTINCT Price FROM Table3 
+WHERE Price > 20
+ORDER BY Price DESC;
+
+SELECT CategoryID, COUNT(*) AS NumProducts
+FROM Table3
+GROUP BY CategoryID;
+
+-- Select rows from a Table or View '' in schema 'SchemaName'
+SELECT AVG(Price) AvgPrice FROM Table3
+GROUP BY CategoryID
+ORDER BY AvgPrice ASC;
+

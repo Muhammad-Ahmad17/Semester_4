@@ -2,11 +2,11 @@ clc;
 clear;
 close all;
 
-% Define n and unit step signal u[n]
+
 n = -113:113;
 u = (n >= 0);   % u[n] = 1 for n>=0, 0 for n<0
 
-% Decompose u[n] into even and odd parts
+
 % Because n is symmetric, u[-n] is just flip(u)
 u_neg = flip(u);
 

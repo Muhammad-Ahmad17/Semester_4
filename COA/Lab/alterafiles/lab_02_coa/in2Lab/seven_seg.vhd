@@ -3,7 +3,7 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY seven_seg IS
+ENTITY IS
     PORT (
         bininput : IN std_logic_vector(3 DOWNTO 0);  
         cathodes : OUT std_logic_vector(6 DOWNTO 0)  
